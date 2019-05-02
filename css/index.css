@@ -189,6 +189,9 @@ header nav a {
   color: #212529;
   font-size: 1.75rem;
 }
+header nav a:hover {
+  transform: scale(1.5);
+}
 @media (max-width: 500px) {
   header {
     flex-direction: column;
@@ -336,6 +339,10 @@ header nav a {
   background-color: #0f6674;
   border-radius: 15px;
   color: #FFFFFF;
+}
+.home .content-pick .destination button:hover {
+  background-color: white;
+  color: black;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination button {
