@@ -8,6 +8,26 @@ header {
     padding-bottom: 2.5em;
     .flex (space-between, center);
 
+    div {
+        h1 {
+            .animation (2.5s, bouncein, 1);
+        }
+
+        @keyframes bouncein {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 2;
+            }
+            100% {
+                transform: scale (1);
+            }
+        }
+    }
+
     nav{
         width: 400px;
         .flex (space-around, baseline);
@@ -16,10 +36,10 @@ header {
             text-decoration: none;
             color: @shark;
             font-size: 1.75rem;
-        }
 
-        a:hover {
-            .grow (1.5;)
+            &:hover {
+                .grow (1.5);
+            }
         }
     }
 

@@ -178,6 +178,24 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header div h1 {
+  animation-duration: 2.5s;
+  animation-name: bouncein;
+  animation-iteration-count: 1;
+}
+@keyframes bouncein {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 2;
+  }
+  100% {
+    transform: scale 1;
+  }
+}
 header nav {
   width: 400px;
   display: flex;
@@ -228,6 +246,9 @@ header nav a:hover {
 }
 .top-content img {
   margin-bottom: 2em;
+  animation-duration: 8s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
 }
 .top-content p {
   padding-bottom: 1em;
@@ -264,6 +285,9 @@ header nav a:hover {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  animation-duration: 8s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -291,6 +315,9 @@ header nav a:hover {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  animation-duration: 8s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
@@ -303,6 +330,9 @@ header nav a:hover {
 }
 .home .content-destination img {
   border-radius: 10px;
+  animation-duration: 8s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -348,5 +378,13 @@ header nav a:hover {
   .home .content-pick .destination button {
     width: 100%;
     background-color: #17A2B8;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
