@@ -200,13 +200,16 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.dashed-line {
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+}
 .top-content {
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
 }
 .top-content img {
-  border-top: 2px dashed #C0C0C0;
   margin-bottom: 2em;
 }
 .top-content p {
@@ -258,4 +261,12 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  width: 82.5%;
+  height: 2.5em;
+  font-size: 1.75rem;
+  background-color: #0f6674;
+  border-radius: 15px;
+  color: #FFFFFF;
 }
