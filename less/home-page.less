@@ -17,6 +17,10 @@
     padding-bottom: 1em;
     border-bottom: 2px dashed @navigation-border;
   }
+
+  @media @mobile {
+    width: 90%;
+  }
 }
 
 .home {
@@ -28,10 +32,19 @@
     justify-content: space-between;
 
    
-    
+    @media @mobile {
+      display: flex;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -40,8 +53,19 @@
 
       img {
         border-radius: 10px;
+        
+        @media @mobile {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
       }
     }
+
   }
 
   .inverse-content {
@@ -56,6 +80,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 10;
+      }
     }
   }
 
@@ -66,6 +94,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 90%;
+    }
   }
 
   .content-pick {
@@ -73,13 +105,34 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile {
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 80%;
+        margin-left: 5em;
+      }
+
       button {
         .button (82.5%, 2.5em, 1.75rem, @button-bg, 15px, @main-bg)
+      }
+    }
+  }
+  .content-pick{
+    .destination{
+      button {
+        @media @mobile {
+          width: 100%;
+          background-color: @button-bg;
+        }
       }
     }
   }
