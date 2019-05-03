@@ -16,8 +16,27 @@
 
 <body>
 
-  
-     
+  <header>
+    
+    <div>
+      <h1>Fun Bus</h1>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="dashed-line"></div>
+
+  <section class="top-content">
+    <img src="img/fun-bus.jpg">
+    <h2>Welcome To Fun Bus!</h2>
+    <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+  </section>
   <div class="container home">
    
     <section class="content-section">
@@ -51,20 +70,44 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
     </section>
   </div><!-- container -->
+
+  <form action="#" method="post">
+    <div>
+      <label for="Vacation-Package">Vacation Package:</label>
+      <input type="text" id="vacationPackage" name="Vacation_Package">
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text">
+    </div>
+    <div>
+      <label for="phone-number">Phone Number:</label>
+      <input type="text">
+    </div>
+    <div>
+      <label for="msg">Special Instructions:</label>
+      <input type="text">
+    </div>
+    <button>Submit</button>
+  </form>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>

@@ -1,3 +1,29 @@
+.dashed-line {
+  border-bottom: 2px dashed @navigation-border;
+  width: 100%;
+}
+
+.top-content {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  img {
+    margin-bottom: 2em;
+    .animation(8s, fadein, 1);
+  }
+
+  p {
+    padding-bottom: 1em;
+    border-bottom: 2px dashed @navigation-border;
+  }
+
+  @media @mobile {
+    width: 90%;
+  }
+}
+
 .home {
 
   .content-section {
@@ -7,20 +33,41 @@
     justify-content: space-between;
 
    
-    
+    @media @mobile {
+      display: flex;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .animation(8s, fadein, 1);
 
       img {
         border-radius: 10px;
+        
+        @media @mobile {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
       }
     }
+
   }
 
   .inverse-content {
@@ -35,6 +82,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      .animation(8s, fadein, 1);
+
+      @media @mobile {
+        order: 10;
+      }
     }
   }
 
@@ -44,6 +96,12 @@
 
     img {
       border-radius: 10px;
+      
+      .animation(8s, fadein, 1);
+    }
+
+    @media @mobile {
+      width: 90%;
     }
   }
 
@@ -52,10 +110,84 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile {
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin-left: 5em;
+      }
+
+      button {
+        .button (82.5%, 2.5em, 1.75rem, @button-bg, 15px, @main-bg)
+      }
+
+      button:hover {
+          .hover (white, black);
+      }
     }
   }
+  .content-pick{
+    .destination{
+      button {
+        @media @mobile {
+          width: 100%;
+          background-color: @button-bg;
+        }
+      }
+    }
+  }
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 }// home
+
+form {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  div {
+    margin-top: 1em;
+
+    label {
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+      font-size: 1.5rem;
+    }
+
+    input, textarea {
+      font: 1em sans-serif;
+      width: 300px;
+      border: 1px solid #999;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #000;
+    }
+
+    textarea {
+      vertical-align: top;
+      height: 5em;
+    }
+  }
+  button {
+    width: 7em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+  }
+}
